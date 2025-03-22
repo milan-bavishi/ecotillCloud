@@ -11,6 +11,7 @@ import CarbonTracker from "@/components/ecoiot/CarbonTracker";
 import { Loader2 } from "lucide-react";
 import CloudServices from "./CloudServices";
 import ProfessionalGreenInitiatives from "./ProfessionalGreenInitiatives";
+import DigitalWellbeing from "./DigitalWellbeing";
 
 const ProfessionalDashboard = () => {
   const [loading, setLoading] = useState(true);
@@ -76,6 +77,7 @@ const ProfessionalDashboard = () => {
           <Route path="/sustainable-travel" element={<RouteCalculator />} />
           <Route path="/travel-history" element={<TravelHistory />} />
           <Route path="/travel-insights" element={<TravelInsights />} />
+          <Route path="/digital-wellbeing" element={<DigitalWellbeing />} />
           <Route
             path="/suggestions"
             element={<div className="p-6">Sustainability Suggestions Page</div>}

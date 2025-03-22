@@ -25,6 +25,12 @@ import {
   WifiIcon,
   Cloud,
   Leaf,
+  Footprints,
+  Smartphone,
+  Car,
+  LineChart,
+  Heart,
+  Server,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
@@ -128,7 +134,7 @@ const DashboardSidebar: React.FC<SidebarProps> = ({ type }) => {
     },
     {
       type: "section",
-      label: "Digital Wellbeing",
+      label: "cloud",
     },
     {
       icon: <Cloud className="h-5 w-5" />,
@@ -196,6 +202,31 @@ const DashboardSidebar: React.FC<SidebarProps> = ({ type }) => {
       icon: <Settings className="h-5 w-5" />,
       label: "Settings",
       path: "/professional-dashboard/settings",
+    },
+    {
+      icon: <Footprints className="h-5 w-5" />,
+      label: "Carbon Footprint",
+      path: "/professional-dashboard/footprint",
+    },
+    {
+      icon: <Server className="h-5 w-5" />,
+      label: "Cloud Server",
+      path: "/professional-dashboard/cloud-server",
+    },
+    {
+      icon: <Smartphone className="h-5 w-5" />,
+      label: "Digital Wellbeing",
+      path: "/professional-dashboard/digital-wellbeing",
+    },
+    {
+      icon: <Car className="h-5 w-5" />,
+      label: "Sustainable Travel",
+      path: "/professional-dashboard/sustainable-travel",
+    },
+    {
+      icon: <LineChart className="h-5 w-5" />,
+      label: "Carbon Tracker",
+      path: "/professional-dashboard/carbon-tracker",
     },
   ];
 
