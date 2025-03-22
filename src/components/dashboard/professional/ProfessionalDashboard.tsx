@@ -10,6 +10,7 @@ import TravelInsights from "../sustainable-travel/TravelInsights";
 import CarbonTracker from "@/components/ecoiot/CarbonTracker";
 import { Loader2 } from "lucide-react";
 import CloudServices from "./CloudServices";
+import ProfessionalGreenInitiatives from "./ProfessionalGreenInitiatives";
 
 const ProfessionalDashboard = () => {
   const [loading, setLoading] = useState(true);
@@ -63,6 +64,10 @@ const ProfessionalDashboard = () => {
           <Route path="/footprint" element={<ProfessionalFootprint />} />
           <Route path="/insights" element={<ProfessionalInsights />} />
           <Route path="/cloud-services" element={<CloudServices />} />
+          <Route
+            path="/green-initiatives"
+            element={<ProfessionalGreenInitiatives />}
+          />
           <Route
             path="/computing-impact"
             element={<div className="p-6">Computing Impact Analysis</div>}

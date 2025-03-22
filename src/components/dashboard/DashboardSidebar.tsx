@@ -24,6 +24,7 @@ import {
   Cpu,
   WifiIcon,
   Cloud,
+  Leaf,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
@@ -170,6 +171,11 @@ const DashboardSidebar: React.FC<SidebarProps> = ({ type }) => {
     {
       type: "section",
       label: "Personal Growth",
+    },
+    {
+      icon: <Leaf className="h-5 w-5" />,
+      label: "Green Initiatives",
+      path: "/professional-dashboard/green-initiatives",
     },
     {
       icon: <Lightbulb className="h-5 w-5" />,
